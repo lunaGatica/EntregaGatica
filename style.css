@@ -1,0 +1,20 @@
+h1{
+    color: green;
+    font-size: 38px;
+    place-items: center; 
+    display: flex;
+    justify-content: center;
+    
+
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+p{
+   color: blueviolet;
+   
+}
+
+
+
