@@ -17,9 +17,15 @@ while (validarClave(clave)){
 
 alert("Bienvenido " + USUARIO  +  " ahora vamos a pedirte algunos datos para saber más sobre vos:");
 
+
+const NOMBRE = prompt("Ingrese su nombre")
+const APELLIDO = prompt("Ingrese su apellido")
+const MAIL = prompt("Ingrese su mail")
 const ALERGIA = prompt("¿Es alergico/a a alguna planta o elemento que las componga?")
 const EDAD = prompt("Indica cuantos años tenes")
 const COLOR = prompt("Seleccione su color favorito")
+
+
 
 alert("Gracias " + USUARIO + " por responder esta leve encuesta, a continuación te haremos otras preguntas para seleccionar la mejor planta que se adecue a vos :)" )
 
@@ -39,6 +45,32 @@ validarSeleccion(luzSolar,SELECCION_LUZ,4)
 const SELECCION_ESPACIO = "Espacio disponible, Si usted cuenta con un patio con tierra coloque (1), Si usted cuenta con terraza pero no tiene un suelo con tierra coloque (2), Si usted tiene un balcón coloque (3), Si usted no cuenta con un espacio al exterior coloque (4)"
 let espacioDisponible = parseInt(prompt(SELECCION_ESPACIO))
 validarSeleccion(espacioDisponible,SELECCION_ESPACIO,4)
+
+const usuariosBotanica = [];
+
+const agregarUsuario = (nombre,apellido,edad,mail,clave) => {
+    usuariosBotanica.push({
+      nombre: nombre,
+      apellido: apellido,
+      edad: edad,
+      mail: mail,
+      clave: clave,
+    });
+  };
+const isclave = usuariosBotanica.find(unclave) => {
+    return(
+        unclave.clave.trim().toLowerCase() === clave.trim().toLowerCase()
+    );
+    if (isclave){
+        alert("clave correcta", isclave);}
+            else{
+                alert("Clave incorrecta, por favor ingrese de nuevo");
+        
+    }
+}
+  console.log(usuariosBotanica)
+
+
 
 
 

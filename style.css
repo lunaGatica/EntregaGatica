@@ -11,10 +11,23 @@ img{
     width: 120px;
     height: 120px;
 }
-p{
-   color: blueviolet;
+
+.container{
+    display: flex;
+    margin:  90px;
+    justify-content: center;
    
+    
 }
+.alinear{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+body{
+background-color:#8EB681 ;
+}
+
 
 
 
